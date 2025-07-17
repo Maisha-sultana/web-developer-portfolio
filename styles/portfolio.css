@@ -179,8 +179,21 @@ footer input[type="name"],footer input[type="email"],footer textarea{
     display: none;
 }
 @media screen and (max-width: 576px) {
-    .skill-container , .resume-container, footer, .about-items{
+    .skill-container , 
+    .resume-container, 
+    footer, 
+    .about-items,
+    .banner, nav, nav>ul {
         flex-direction: column;
+    }
+    nav> ul{
+        gap: 20px;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+    .banner{
+        margin: 20px;
     }
     footer, .about{
         padding: 20px;
@@ -188,8 +201,19 @@ footer input[type="name"],footer input[type="email"],footer textarea{
     .footer-column{
         width: 100%;
     }
-    
+    .header{
+        background-image: none;
+    }
+    .banner-pic{
+        width: 100%;
+    }
     footer input[type="name"], footer input[type="email"], footer textarea{
         width: calc(100% - 40px);
 }
+}
+/* for tablet */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .banner{
+        flex-direction: column;
+    }
 }
